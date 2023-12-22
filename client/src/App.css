@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+::selection{
+  background: #000;
+  color: #fff;
+}
+.app {
+  width: 60%;
+  margin: 0 auto;
+  background: #ddd;
+  padding: 2vw;
+  border-radius: 10px;
+  margin-top: 8vh;
+}
+
+.form_container{
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 1.5vw;
+}
+.app_heading {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+
+.app_heading>h2 {
+  font-size: 3.3vw;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 1.1;
+}
+
+.app_form>form{
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+.app_form>form>input {
+  padding: 0.4vw 0.8vw;
+  border: none;
+  outline: none;
+  background: white;
+  font-size: 1.4vw;
+  letter-spacing: 0.3px;
+  border-radius: 3px;
+  width: 70%;
+  font-weight: 500;
+}
+
+.app_form>form>button {
+  background: #aaa;
+  border: none;
+  outline: none;
+  padding: 0.5vw 2vw;
+  font-size: 1.3vw;
+  margin-left: 1vw;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.tasks_container{
+  margin-top: 2vw;
+  position: relative;
+}
+.undo_btn{
+  position: absolute;
+  top: -5%;
+  right: 0;
+  padding: 0.5vw 1.8vw;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.time_line{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25vw;
+  background: red;
+  transition: all linear 3s;
+}
+.task_status{
+  width: 100%;
+  padding: 0.5vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.task_status_btn{
+  cursor: pointer;
+  padding: 0.2vw 1vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+  background: azure;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+}
+.btn_active{
+  background: #000;
+  color: #fff;
+}
+.tasks{
+  width: 95%;
+  min-height: 16vw;
+  margin: 0 auto;
+  margin-top: 0.8vw;
+  background: #ffffff;
+  padding: 1vw 2vw;
+  border-radius: 8px;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 0.6vw;
+}
+.task:last-child{
+  margin-bottom: 0;
+}
+.task_data{
+  width: 88%;
+  padding: 0.3vw 1vw;
+  background:#888785;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.task_data>h5{
+  font-size: 1.3vw;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.4px;
+  cursor: default;
+}
+
+.completed_task_btn{
+  /* background: #11913c; */
+  background:#888785;
+}
+.completed_task_btn>h5{
+  color: #ccc;
+}
+
+.task_img{
+  width: 32vw;
+  height: 16vw;
+  margin: 0 auto;
+  background-image: url('https://img.freepik.com/premium-vector/no-task-available-illustration_585024-46.jpg?w=2000');
+  background-size: cover;
+  background-position: 0 40%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.task_data>form{
+  width: 100%;
+}
+
+.updateinput{
+  padding: 0;
+  margin-bottom: 0;
+  line-height: 0.7;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3vw;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.4px;
+  border-bottom: 3px solid #000000;
+}
+.task_edit,.task_delete{
+  display: grid;
+  place-items: center;
+  background: #aaa;
+  padding: 5px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
